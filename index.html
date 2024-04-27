@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MovieProject</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -11,14 +13,31 @@
 <!-- Header -->
 <header>
     <div class="inner">
-       성준쓰's 영화평점 컬렉션
+        <div class="title">
+                성준쓰's 영화평점 컬렉션
+        </div>
+            
+      <div class="sub-menu">
+        <ul class="menu">
+          <li>
+              <a href="/login" class="green">Log In</a>
+            </li>
+            <li>
+              <a href="/logout" class="green">Log Out</a>
+            </li>
+            <li>
+              <a href="/signup">Sign Up</a>
+            </li>
+            <div class="search">
+                <input type="text" />
+                <div class="material-icons">search</div>
+              </div>   
+        </ul>
+      </div>
     </div>
-    <section class="search">
-        영화검색 : <input type="text" placeholder="영화제목을 검색해 보세요"> 
-        <button>검색</button>
-    </section>
-</header>
+</div>
+    </header>
 
-    <script src="./movie.js"></script>
+    <script defer src="./movie.js"></script>
 </body>
 </html>
