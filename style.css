@@ -58,7 +58,7 @@ header .search button:hover {
 .main {
     padding-top: 10px;
     height: 100%;
-    background-color: green;
+    background-color: #777;
     justify-content: space-between;
     align-items: center;
     
@@ -66,9 +66,17 @@ header .search button:hover {
 }
 .main .movieCards {
     display: grid;    
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: .5fr .5fr .5fr;
     grid-row-gap: 20px;
+    @media screen and (min-width: 768px){
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    @media screen and (min-width: 992px){
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
     
 }
 .main .movieCards .container{
@@ -95,12 +103,4 @@ header .search button:hover {
     border-radius: 10px;
 }
 
-@media screen and (max-width: 768px){
-    .main {
-        flex-direction: column;
-    }
-    .movieCards {
-        flex-direction: column;
-        width: 100%;
-    }
-}
+
