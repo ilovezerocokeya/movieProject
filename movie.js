@@ -7,7 +7,7 @@ searchEl.addEventListener('click', function () {
  
 searchInputEl.addEventListener('focus', function() { 
   searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '영화제목 검색');
+  searchInputEl.setAttribute('placeholder', '영화제목을 검색해보세요');
 });
 
 searchInputEl.addEventListener('blur', function() {
@@ -39,10 +39,10 @@ const options = {
               movieCards.innerHTML += `
               <div id="content" class="container">                  
               <div class="card">
-                    <img src="https://image.tmdb.org/t/p/w300/${card.poster_path}"  alt="영화이미지" />
+                    <img src="https://image.tmdb.org/t/p/w300/${card.poster_path}" class="radius_img" alt="영화이미지" />
                     <h3 class="title">${card.title}</h3>
                     <p class="overview">${card.overview}</p>
-                    <p class="rating">${card.vote_average}</p>
+                    <p class="rating">${(card.vote_average).toFixed(1)}</p>
                   </div>
                 </div>`
              });
