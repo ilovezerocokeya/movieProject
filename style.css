@@ -1,0 +1,87 @@
+.inner {
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    top:0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-top: 100;
+    top: 0;   
+    left: 0;
+}
+
+
+header .title {
+    font-size: 30px;
+    color : gray;
+    position: relative;
+    padding-left: 30%;
+}
+
+header .sub-menu .search {
+    height: 50px;
+    position: relative;
+    text-align: center;
+}
+
+header .sub-menu .search input {
+    width: 200px;
+    height: 34px;
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fff;
+    color: #777;
+    font-size: 12px;
+    transition: width .4s;
+}
+header .sub-menu .search input:focus {
+    width: 190px;
+    border-color: #669900;
+  }
+header .sub-menu .search .material-icons {
+    height: 24px;
+    top: 0;
+    bottom: 0;
+    right: 5px;
+    margin: auto;
+    transition: .4s;
+}
+
+header .sub-menu .search.focused .material-icons {
+    opacity: 0;
+}
+
+.main {
+    padding-left: 0;
+
+}
+.main .movieCards {
+    position: relative;
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 800px 800px 800px;
+}
+.main .movieCards .container{
+    margin: auto;
+    align-content: center;
+}
+
+.main .movieCards .container .card {
+    width: 350px;
+    height: 750px;
+    align-items: center;
+    text-align: center;
+    font: #e5e5e5;
+}
+
