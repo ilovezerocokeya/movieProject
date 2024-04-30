@@ -29,6 +29,10 @@ header .search {
     height: 50px;
     text-align: center;
 }
+header .search label {
+    font-size: 20px;
+    font-weight: bold;
+}
 
 header .search input {
     width: 200px;
@@ -45,8 +49,10 @@ header .search input {
 header .search button {
     width: 50px;
     height: 34px;
-    color: #777;
+    color: #333;
     background-color: #fff;
+    font-weight: bold;
+    
 }
 header .search button:hover {
     background-color: #d49466;
@@ -79,7 +85,7 @@ header .search button:hover {
     }
     
 }
-.main .movieCards .container{
+.main .movieCards .card {
     margin: auto;
     padding-top: 10px;
     align-content: center;
@@ -89,17 +95,13 @@ header .search button:hover {
     background-color: #fff;
     box-shadow: 2px 2px 2px;
   
-
-}
-
-.main .movieCards .container .card {
     width: 350px;
     height: 750px;
     align-items: center;
     text-align: center;
     font: #e5e5e5;
 }
-.main .movieCards .container .card .radius_img {
+.main .movieCards .card .radius_img {
     border-radius: 10px;
 }
 
