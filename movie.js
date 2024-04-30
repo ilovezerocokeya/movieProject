@@ -20,9 +20,7 @@ fetch(
 )
   .then((response) => response.json())
   .then((data) => {
-    const content = document.getElementById("content");
-    console.log(content);
-
+    console.log((data).results);
     const cardArray = data.results;
   //초기화작업
   // const docFragment = document.createDocumentFragment();
@@ -49,24 +47,24 @@ searchEl.addEventListener("submit", function () {
 
 });
 
+//   //영화 리스트 검색어로 필터링
+// const inner = document.querySelector(".inner");
 
-  //영화 리스트 검색어로 필터링
-const inner = document.querySelector(".inner");
+// inner.innerHTML = card.map((card) => 
+// `  <div class="card">
+// <img src="https://image.tmdb.org/t/p/w300/${
+//   card.poster_path
+// }" class="radius_img" alt="영화이미지" />
+// <h3 class="title">${card.title}</h3>
+// <p class="overview">${card.overview}</p>
+// <p class="rating">${card.vote_average.toFixed(1)}</p>
+// </div>;
+// `).join("");
+// const input = document.querySelector(".search-box");
+// input.addEventListener("keyup" , (e) => {
+//   const keyword = e.target.value;
+//   const filteredMovie = searchFilter(card, keyword);
+//   inner.innerHTML = filteredMovie.map 
+// });
 
-inner.innerHTML = card.map((card) => 
-`  <div class="card">
-<img src="https://image.tmdb.org/t/p/w300/${
-  card.poster_path
-}" class="radius_img" alt="영화이미지" />
-<h3 class="title">${card.title}</h3>
-<p class="overview">${card.overview}</p>
-<p class="rating">${card.vote_average.toFixed(1)}</p>
-</div>;
-`).join("");
-const input = document.querySelector(".search-box");
-input.addEventListener("keyup" , (e) => {
-  const keyword = e.target.value;
-  const filteredMovie = searchFilter(card, keyword);
-  inner.innerHTML = filteredMovie.map 
-});
 
